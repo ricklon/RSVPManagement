@@ -13,6 +13,7 @@ Our system connects various platforms:
 3. **Google Calendar:** Centralized location for scheduling and tracking events.
 4. **Zoom:** Platform used for hosting the events.
 
+
 ## Features
 
 - **Event Synchronization:** The system pulls event data from Meetup.com and syncs it with Google Calendar. RSVP URLs will be generated for Discord and WordPress platforms.
@@ -22,17 +23,40 @@ Our system connects various platforms:
 - **Interest Tracking:** The system collects and tracks the interests of attendees for future event planning.
 - **Attendee Feedback:** Post-event feedback collection for continuous improvement of the event hosting process.
 
-## System Architecture (TBD)
+## System Architecture
 
 A high-level overview of the system architecture and how the different components interact.
 
-## Installation & Setup (TBD)
+
++-------------+ +--------------+ +-----------------+ +-------------+
+| Meetup.com | -->| Google |<-->| RSVP Collection |<-->| Discord & |
+| (Event Src) | | Calendar | | & Vetting (Our | | WordPress |
++-------------+ | (Event Sync) | | System) | | (RSVP Src) |
++--------------+ +-----------------+ +-------------+
+| ^
+v |
++-------------+
+| Zoom (Event |
+| Hosting) |
++-------------+
+
+## Installation & Setup
 
 Step-by-step instructions on how to install and setup the system.
+To install the project dependencies:
+
+```shell
+$ poetry install
+```
 
 ## Usage (TBD)
 
-Guidelines on how to use the system, covering all features.
+Guidelines on how to use the system, covering all features
+
+To run the Streamlit application:
+
+`$ streamlit run app.py`
+
 
 ## Contributing (TBD)
 
