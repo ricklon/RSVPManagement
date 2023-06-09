@@ -27,7 +27,7 @@ Our system connects various platforms:
 
 A high-level overview of the system architecture and how the different components interact.
 
-
+```
 +-------------+ +--------------+ +-----------------+ +-------------+
 | Meetup.com | -->| Google |<-->| RSVP Collection |<-->| Discord & |
 | (Event Src) | | Calendar | | & Vetting (Our | | WordPress |
@@ -39,7 +39,7 @@ v |
 | Zoom (Event |
 | Hosting) |
 +-------------+
-
+```
 ## Installation & Setup
 
 Step-by-step instructions on how to install and setup the system.
